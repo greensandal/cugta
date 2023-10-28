@@ -1,19 +1,21 @@
 #include <vector>
+#include <typeinfo>
+
 
 namespace GRAPHDEF{
 
-struct Node{
-    // The No. of node
-    int no;
-};
 
 template <typename T>
-struct Edge {
-    // Edge's weight
-    T weight;
-    Node head;
-    Node tail;
-    bool directed;
+struct Mod_vec {
+    std::vector<std::vector<T>> s;
+    bool operator==(const Mod_vec<T>& s_t) {
+        if(s_t.s == this->s) return true;
+        return false;
+    }
+    Mod_vec() {};
+    Mod_vec(std::vector<std::vector<T>> t) {
+        this->s = t;
+    }
 };
 
 enum Rep_graph{MAP, MATRIX};
@@ -22,17 +24,24 @@ enum Rep_graph{MAP, MATRIX};
 template <typename T>
 struct Graph {
 private:
-    void* m_graph;
+    T m_graph;
     Rep_graph m_type;
 public:
     void PrintGraph(Graph<T>& G) {
         ;
     }
+
     bool operator==(const Graph<T>& G) {
-        return true;
+        if(this->m_graph == G.m_graph) return true;
+        return false;
     }
+
     Graph() {}
-    Graph(std::vector<std::vector<T> >, Rep_graph t = Rep_graph::MATRIX) {}
+    Graph(T &G, Rep_graph t = Rep_graph::MATRIX) {
+        m_type = t;
+        m_graph = G;
+    }
+    ~Graph(){}
 };
 
 }
