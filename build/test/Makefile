@@ -175,30 +175,6 @@ test/fast:
 	cd /home/ll/workspace/cugta/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/build
 .PHONY : test/fast
 
-__/src/graph.o: __/src/graph.cpp.o
-.PHONY : __/src/graph.o
-
-# target to build an object file
-__/src/graph.cpp.o:
-	cd /home/ll/workspace/cugta/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/__/src/graph.cpp.o
-.PHONY : __/src/graph.cpp.o
-
-__/src/graph.i: __/src/graph.cpp.i
-.PHONY : __/src/graph.i
-
-# target to preprocess a source file
-__/src/graph.cpp.i:
-	cd /home/ll/workspace/cugta/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/__/src/graph.cpp.i
-.PHONY : __/src/graph.cpp.i
-
-__/src/graph.s: __/src/graph.cpp.s
-.PHONY : __/src/graph.s
-
-# target to generate assembly for a file
-__/src/graph.cpp.s:
-	cd /home/ll/workspace/cugta/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/__/src/graph.cpp.s
-.PHONY : __/src/graph.cpp.s
-
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -236,9 +212,6 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... __/src/graph.o"
-	@echo "... __/src/graph.i"
-	@echo "... __/src/graph.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

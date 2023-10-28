@@ -8,7 +8,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ll/workspace/cugta/src/graph.cpp" "test/CMakeFiles/test.dir/__/src/graph.cpp.o" "gcc" "test/CMakeFiles/test.dir/__/src/graph.cpp.o.d"
   "/home/ll/workspace/cugta/test/main.cpp" "test/CMakeFiles/test.dir/main.cpp.o" "gcc" "test/CMakeFiles/test.dir/main.cpp.o.d"
   )
 

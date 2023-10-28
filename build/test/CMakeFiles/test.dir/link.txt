@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/test.dir/main.cpp.o CMakeFiles/test.dir/__/src/graph.cpp.o -o test  ../lib/libgtest.a 
+/usr/bin/c++ CMakeFiles/test.dir/main.cpp.o -o test  ../lib/libgtest.a 

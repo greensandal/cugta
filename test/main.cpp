@@ -2,8 +2,9 @@
 #include <gtest/gtest.h>
 #include "./../src/graph.h"
 
-T_Graph a;
-T_Graph b;
+// using namespace GRAPHDEF;
+GRAPHDEF::Graph<int> a;
+GRAPHDEF::Graph<int> b;
 
 TEST(obj_eq, graphEQ) {
         EXPECT_EQ(true, a==b);

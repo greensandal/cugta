@@ -1,27 +1,41 @@
 #include <vector>
 
-struct T_Node
-{
+namespace GRAPHDEF{
+
+struct Node{
+    // The No. of node
     int no;
 };
 
-struct T_Edge
-{
-    int weight;
-    int head;
-    int tail;
+template <typename T>
+struct Edge {
+    // Edge's weight
+    T weight;
+    Node head;
+    Node tail;
+    bool directed;
 };
 
-struct T_Graph
-{
-    private:
-    std::vector<T_Node> nodes;
-    std::vector<T_Edge> edges;
-    public:
-    void PrintGraph(T_Graph& G);
-    bool operator==(const T_Graph& G);
+enum Rep_graph{MAP, MATRIX};
+
+// T means weight's type
+template <typename T>
+struct Graph {
+private:
+    void* m_graph;
+    Rep_graph m_type;
+public:
+    void PrintGraph(Graph<T>& G) {
+        ;
+    }
+    bool operator==(const Graph<T>& G) {
+        return true;
+    }
+    Graph() {}
+    Graph(std::vector<std::vector<T> >, Rep_graph t = Rep_graph::MATRIX) {}
 };
 
+}
 
 
 
